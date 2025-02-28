@@ -7,6 +7,6 @@ RUN mvn package -DskipTests
 
 FROM amazoncorretto:21-alpine-jdk
 WORKDIR /app
-COPY --from=build /app/target/ms-books-catalogue*.jar ./ms-books-catalogue.jar
+COPY --from=build /app/target/*.jar ./ms-books-catalogue.jar
 EXPOSE 8080
 CMD ["java", "-jar", "ms-books-catalogue.jar"]

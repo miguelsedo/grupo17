@@ -11,6 +11,7 @@
     <modules>
         <module>ms-books-catalogue</module>
         <module>ms-books-payments</module>
+         <module>gatewayACL</module>
         <module>eureka</module>
     </modules>
 
